@@ -8,7 +8,7 @@ const Subtotal = () => {
     basket?.reduce((amount, item) => item.price + amount, 0);
   };
 
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
 
   return (
     <div className="subtotal">

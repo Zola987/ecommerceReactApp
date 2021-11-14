@@ -21,6 +21,9 @@ const reducer = (state, action) => {
         console.log('Error alert');
       }
       return { ...state, basket: newcart };
+
+    default:
+      return reducer;
   }
 };
 
